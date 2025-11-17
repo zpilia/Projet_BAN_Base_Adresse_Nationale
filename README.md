@@ -625,7 +625,7 @@ FOR EACH ROW EXECUTE FUNCTION ban.check_gps();
 ### 3. Trigger dates
 
 ``` sql
-ALTER TABLE ban.adressec
+ALTER TABLE ban.adresse
 ADD COLUMN date_creation TIMESTAMP DEFAULT NOW(),
 ADD COLUMN date_modification TIMESTAMP;
 
