@@ -1,17 +1,17 @@
-# README -- Projet Base Adresse Nationale (BAN)
+# README - Projet Base Adresse Nationale (BAN)
 
 ## 📍 1. Présentation du projet
 
 Ce projet vise à :
 
 -   Importer un fichier réel issu de la **Base Adresse Nationale
-    (BAN)**\
--   Analyser sa structure et ses anomalies\
--   Construire un modèle MERISE complet (MCD → MLD → MPD)\
--   Normaliser les données dans un modèle relationnel propre\
--   Construire un pipeline ETL SQL\
--   Produire toutes les **requêtes SQL** imposées par le brief\
--   Créer une **procédure stockée**, des **triggers** et des **index**\
+    (BAN)**
+-   Analyser sa structure et ses anomalies
+-   Construire un modèle MERISE complet (MCD → MLD → MPD)
+-   Normaliser les données dans un modèle relationnel propre
+-   Construire un pipeline ETL SQL
+-   Produire toutes les **requêtes SQL** imposées par le brief
+-   Créer une **procédure stockée**, des **triggers** et des **index**
 -   Étudier l'impact de la normalisation sur la cohérence et la
     performance
     
