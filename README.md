@@ -642,3 +642,12 @@ BEFORE UPDATE ON ban.adresse
 FOR EACH ROW
 EXECUTE FUNCTION ban.set_dates();
 ```
+------------------------------------------------------------------------
+## 👤 Auteur
+
+**Zoé Pilia**  
+Développeuse / Étudiante — Projet de modélisation et optimisation de données (BAN - Base Adresse Nationale)
+
+- Développement SQL, PostgreSQL, MERISE (MCD / MLD / MPD)
+- Construction d’un pipeline ETL complet
+- Analyse, normalisation et optimisation des performances
