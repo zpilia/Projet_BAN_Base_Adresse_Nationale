@@ -651,3 +651,39 @@ Développeuse / Étudiante — Projet de modélisation et optimisation de donné
 - Développement SQL, PostgreSQL, MERISE (MCD / MLD / MPD)
 - Construction d’un pipeline ETL complet
 - Analyse, normalisation et optimisation des performances
+
+------------------------------------------------------------------------
+
+# 📝 7. Remarques & retours des collègues (synthèse)
+
+Cette section résume les principales difficultés rencontrées lors des tests sur différents environnements (Windows / Linux / Mac), ainsi que les améliorations possibles.
+
+## 🔧 Points bloquants identifiés
+
+- **La commande `\copy` ne fonctionne pas dans DBeaver**  
+  → Normal : c'est une commande spécifique à psql.  
+  **Solution** : utiliser l’outil d’import CSV intégré de DBeaver.
+
+- **La commande SQL `COPY` échoue sur Windows**  
+  → PostgreSQL ne peut pas accéder directement aux fichiers locaux.  
+  **Solution** : importer via l’interface DBeaver (plus fiable).
+
+- **Problèmes d’encodage (accents, caractères illisibles)**  
+  → Certains CSV ne sont pas interprétés en UTF‑8.  
+  **Solution** : forcer UTF‑8 dans DBeaver et éviter Excel pour ouvrir le fichier.
+
+- **Délimiteur incorrect lors de l’import**  
+  → Le CSV de la BAN utilise `;`.  
+  **Solution** : vérifier le paramètre de séparation dans l'assistant d’import DBeaver.
+
+## 🚧 Points à améliorer
+
+- Ajouter une **version Docker** pour éviter les différences entre environnements.
+- Automatiser l’import du CSV pour réduire les erreurs manuelles.
+- Ajouter une section dédiée aux **performances** (avant/après indexation).
+
+## ✔️ Conclusion synthétique
+
+Les tests sur d’autres machines ont mis en évidence des différences liées aux outils et systèmes utilisés.  
+Une fois importées correctement, les données fonctionnent parfaitement avec le pipeline SQL.  
+La future intégration Docker et l’automatisation de l’import renforceront la reproductibilité du projet.
